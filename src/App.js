@@ -37,9 +37,8 @@ function App() {
   return (
     <div>
       {user.email !== "" ? (
-        <div>
-          <h1>Welcome</h1>
-          <button onClick={Logout}>Logout</button>
+        <div className="logout-div">
+          <button className='logout-btn' onClick={Logout}>Logout</button>
         </div>
       ) : (
         <LoginForm Login={Login} error={error} />

@@ -2,3 +2,28 @@
   text-align: center;
   margin: 0 auto;
 }
+
+#root {
+  width: 100%;
+  height: auto;
+}
+
+.logout-div {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.logout-btn {
+  border: 0.1rem;
+  border-radius: 0.9em;
+  width: 4rem;
+  font-size: 0.8em;
+  text-align: center;
+  height: 1.6rem;
+  background-color: white;
+  color: crimson;
+}
+
+.logout-btn:hover {
+  background-color: rgb(202, 237, 255);
+}

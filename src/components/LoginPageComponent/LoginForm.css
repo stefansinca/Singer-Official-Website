@@ -21,6 +21,7 @@ body {
   height: min-content;
   padding: 20px;
   border-radius: 12px;
+  margin: 0 auto;
 }
 
 .login h1 {
@@ -58,6 +59,10 @@ body {
   margin-top: 0.3rem;
   color: black;
   background: #fbceb5 !important;
+}
+
+.login form input[type="submit"]:hover {
+  background: #f3af8a !important;
 }
 
 .login input::placeholder {
