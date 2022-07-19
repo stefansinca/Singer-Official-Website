@@ -63,3 +63,13 @@ body {
 .login input::placeholder {
   color: white;
 }
+
+.error {
+  padding-bottom: 0.7rem;
+  color: #ffd800
+}
+
+.bi {
+  margin-right: 0.5rem;
+  margin-bottom: 0.3rem;
+}

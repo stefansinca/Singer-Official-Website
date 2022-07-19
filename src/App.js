@@ -31,6 +31,7 @@ function App() {
 
   const Logout = () => {
     setUser({ email: "", password: "" });
+    setError('')
   };
 
   return (
