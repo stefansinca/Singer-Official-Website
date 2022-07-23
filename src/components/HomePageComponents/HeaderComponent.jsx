@@ -1,5 +1,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import MediaQuery from "react-responsive";
+
 import {
   Nav,
   NavLink,
@@ -7,14 +9,19 @@ import {
   NavMenu,
   NavBtn,
   navBtn,
-  socialIcon
+  socialIcon,
+  navLinkImg
 } from "./HeaderComponentStyle";
 import "./HeaderComponentStyle.js";
-import "./HeaderComponent.css";
+import MobileHeaderComponent from "../MobileComponents/MobileHeaderComponent";
 
 const HeaderComponent = () => {
   return (
     <>
+      <MediaQuery maxWidth={768}>
+        <MobileHeaderComponent />
+      </MediaQuery>
+      <MediaQuery minWidth={769}>
       <Nav>
         <NavMenu>
           <NavLink to="/bio" activeStyle>
@@ -28,15 +35,15 @@ const HeaderComponent = () => {
           </NavLink>
         </NavMenu>
         <NavLink to="/home">
-          <img src={require('../../media/yvonne.png')} />
+          <img src={require('../../media/yvonne.png')}/>
         </NavLink>
-        <Bars />
         <div style={navBtn}>
             <img src={require('../../media/instagram.png')} style={socialIcon} />
             <img src={require('../../media/spotify.png')} style={socialIcon} />
             <img src={require('../../media/facebook.png')} style={socialIcon} />
         </div>
       </Nav>
+      </MediaQuery>
     </>
   );
 };

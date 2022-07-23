@@ -26,18 +26,21 @@ export const NavLink = styled(Link)`
   }
 `;
 
+export const navLinkImg = `
+  width: 50%
+`
+
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
 
   @media screen and (max-width: 768px) {
     display: block;
-    position: absolute;
-    top: 1.4rem;
-    right: 2rem;
     transform: translate (-100, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+    margin: 2rem;
+    z-index: 99;
   }
 `;
 
@@ -63,5 +66,5 @@ export const socialIcon = {
   transition: 'all 0.2s ease-in-out',
   textDecoration: 'none',
   width: 20,
-  height: 20
+  height: 20,
 }
