@@ -13,7 +13,7 @@ export const Nav = styled.div`
     position: absolute;
     justify-content: center;
     flex-grow: 1;
-    transition: height ease 0.3s;
+    transition: ease 0.3s;
 `
 
 export const NavLink = styled(Link)`
