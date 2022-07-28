@@ -1,10 +1,27 @@
-# :microphone: Singer Artist Website
+# singer Artist Website
 
-### Description
+The main focus of the singer Artist Website is to serve as a tool for building a marketing/PR strategy of an artist. This is a presentational website for an artist who are at the beginning of the road and not only.
 
-< To be updated ...
+## Structure:
 
-### :nut_and_bolt: Components
+### HomePage
+
+< to be updated....
+
+### BIO
+
+< to be updated....
+
+### BLOG
+
+< to be updated....
+
+### CONTACT
+
+< to be updated....
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+## :nut_and_bolt: Components
 
 ### The Login Form
 
@@ -25,7 +42,7 @@
 * The Social Icons are moved into the Bars as well. 
 * The Mobile Bars is animated with **react-transition-group.** More specific, the in order to display the the Mobile Bars, the project uses **react-transition-group** library.
 
-< .... Video Here
+https://user-images.githubusercontent.com/66974377/181595189-ceafa4bd-a42d-40ff-b9a4-d60ee21966b5.mp4
 
 ```
 <CSS Transition > 
