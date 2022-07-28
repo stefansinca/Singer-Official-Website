@@ -1,0 +1,191 @@
+#root {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+}
+
+.parent-div-bio {
+    position: absolute;
+    top: 0;
+}
+
+.bio-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+img {
+    z-index: 99;
+}
+
+a {
+    z-index: 2;
+}
+
+.first-bio-img {
+    width: 100%;
+    filter: brightness(0.6);
+    /* z-index 0!important because "Yvonne" is an img and passing z-index 99 to img tag, 
+    results in passing z-index 99 on first-bio-img as well which is overwriting the logo */
+    z-index: 0!important;
+    height: 25rem;
+    object-fit: cover; 
+}
+
+h1 {
+    position: absolute;
+    margin: 0 auto;
+    font-size: 3rem;
+    z-index: 2;
+
+}
+
+.main-bio-img {
+    width: 50%;
+    display: block;
+    margin: 5rem 2rem;
+    margin-top: 5rem;
+    height: auto;
+    float: right;
+}
+
+/* MAIN SECTION */
+
+.bio-h2 {
+    color: black;
+    width: 30%;
+    display: inline-flex;
+    font-weight: 600;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    margin-left: 5%;
+}
+
+.bio-paragraph {
+    color: black;
+    width: 40%;
+    display: block;
+    /* new */
+    margin-left: 5%;
+}
+
+.bio-contact-button {
+    display: block;
+    margin-left: 5%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 30%;
+    height: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: solid 2px;
+    border-color: #db1661;
+    max-width: 10rem;
+
+}
+
+.bio-contact-button:hover {
+    background-color: #db1661;
+    color: white;
+}
+
+/* FOOTER SECTION */
+
+.bio-icon {
+    max-width: 1.5rem;
+}
+
+.bio-footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    margin-bottom: 2rem;
+}
+
+.footer-paragraph {
+    text-align: center;
+    color: black;
+    font-size: .7rem;
+}
+
+.a-bio-icon {
+    width: 4%;
+    margin: .5rem;
+    max-width: 1.5rem;
+    z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+    .main-bio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-bio-img {
+        width: 100%;
+        filter: brightness(0.6);
+        /* z-index 0!important because "Yvonne" is an img and passing z-index 99 to img tag, 
+        results in passing z-index 99 on first-bio-img as well which is overwriting the logo */
+        z-index: 0!important; 
+    }
+
+    .main-bio-img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5rem;
+        height: auto;
+    }
+
+    .bio-h2 {
+        color: black;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+    
+    .bio-paragraph {
+        color: black;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .bio-contact-button {
+        display: block;
+        margin-left: 5%;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 30%;
+        height: 2.5rem;
+        background-color: #ffffff;
+        border-radius: 3rem;
+        cursor: pointer;
+        border: solid 2px;
+        border-color: #db1661;
+        max-width: 10rem;
+    
+    }
+    
+
+    .bio-contact-button {
+        width: 30%;
+    }
+
+    .footer-paragraph {
+        font-size: .5rem;
+    }
+}
