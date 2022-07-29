@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import HeaderComponent from "../HomePageComponents/HeaderComponent";
 import "./BioPageComponent.css";
 
@@ -42,13 +44,15 @@ export const BioPageComponent = () => {
             harmonies give her songs a feeling of sensual mysticism, accompanied
             by introspection and charm.
           </p>
-
+          <NavLink to='/contact' className='contact-btn-bio-nav'>
           <button className="bio-contact-button">Contact</button>
+          </NavLink>
         </main>
       <footer className="bio-footer">
       <a href="https://www.instagram.com/_yvooo/?hl=ro" className="a-bio-icon"><img className='bio-icon' src={require('../../media/instagram1.png')} /> </a>
-      <a href="https://open.spotify.com/artist/7uir3Q8eMSiu8CmBoyNRWm?si=_ySi3PwKSCasDdffOW52uQ" className="a-bio-icon"><img className='bio-icon' src={require('../../media/spotify1.png')} /> </a>
       <a href="https://www.facebook.com/yvoonne23" className="a-bio-icon"><img className='bio-icon' src={require('../../media/facebook1.png')} /> </a>
+      <a href="https://open.spotify.com/artist/7uir3Q8eMSiu8CmBoyNRWm?si=_ySi3PwKSCasDdffOW52uQ" className="a-bio-icon"><img className='bio-icon' src={require('../../media/spotify1.png')} /> </a>
+      
       </footer>
       <p className="footer-paragraph">© 2022 Yvonne Music. All Rights Reserved.</p>
       </div>

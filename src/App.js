@@ -9,8 +9,9 @@ import {
 
 import "./App.css";
 import LoginForm from "./components/LoginPageComponent/LoginForm";
-import { BioPageComponent } from "./components/BioPageComponents/BioPageComponent";
+import { BioPageComponent } from "./components/BioPageComponent/BioPageComponent";
 import HeaderComponent from "./components/HomePageComponents/HeaderComponent";
+import ContactPageComponent from './components/ContactPageComponent/ContactPageComponent.jsx';
 
 function App() {
   const adminUser = {
@@ -50,6 +51,10 @@ function App() {
       {
         path: "/bio",
         element: <BioPageComponent />,
+      },
+      {
+        path: "/contact",
+        element: <ContactPageComponent />
       },
       {
         path: '/home',
