@@ -9,8 +9,11 @@ The main focus of the singer Artist Website is to serve as a tool for building a
 < to be updated....
 
 ### BIO
-
-< to be updated....
+Being a story-telling page, BIO is build as a single static page with the following functionalities:
+- [x] The header is updated for both desktop version and mobile version.
+- [x] BIO page is fully responsive design.
+- [x] The **Contact** button is wraped into a ```</NavLink>``` tag in order to redirect to a new page with ***React Routing***
+- [x] The footer section of the page hold a social media icon-links for a snooth redirect to the artist social media pages. 
 
 ### BLOG
 
@@ -21,7 +24,7 @@ The main focus of the singer Artist Website is to serve as a tool for building a
 < to be updated....
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-## :nut_and_bolt: Components
+## :nut_and_bolt: Functionality
 
 ### The Login Form
 
