@@ -13,15 +13,25 @@ Being a story-telling page, BIO is build as a single static page with the follow
 - [x] The header is updated for both desktop version and mobile version.
 - [x] BIO page is fully responsive design.
 - [x] The **Contact** button is wraped into a ```</NavLink>``` tag in order to redirect to a new page with ***React Routing***
-- [x] The footer section of the page hold a social media icon-links for a snooth redirect to the artist social media pages. 
+- [x] The footer section of the page hold a social media icon-links for a smooth redirect to the artist social media pages. 
 
 ### BLOG
 
 < to be updated....
 
 ### CONTACT
+Based on a similar structure as the BIO Page, the CONTACT Page is made of the ```<BioPageComponent />```. Having a common structre, I was able to use a component as a reusable one.
 
-< to be updated....
+<img src='https://user-images.githubusercontent.com/66974377/181879527-7934746e-f514-42bc-b672-51a688192640.png' width='50%' /> <img src='https://user-images.githubusercontent.com/66974377/181879841-d5e42a2c-0505-47dc-b949-42cfa8032f11.png' width='49%' />
+
+
+
+
+
+- [x] Responsive Design is fully operable.
+- [x] The structure of the Header, Main and Footer are the same as the BIO Page.
+
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ## :nut_and_bolt: Functionality
