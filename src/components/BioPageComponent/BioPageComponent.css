@@ -2,12 +2,15 @@
     background-color: white;
     width: 100%;
     height: auto;
-    overflow: scroll;
 }
 
 .parent-div-bio {
     position: absolute;
     top: 0;
+    z-index: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .bio-div {
@@ -42,6 +45,7 @@ h1 {
     margin: 0 auto;
     font-size: 3rem;
     z-index: 2;
+    margin-left: 4%;
 
 }
 
@@ -61,7 +65,7 @@ h1 {
     width: 30%;
     display: inline-flex;
     font-weight: 600;
-    margin-top: 5rem;
+    margin-top: 7%;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
     margin-left: 5%;

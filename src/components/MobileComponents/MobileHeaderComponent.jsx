@@ -18,12 +18,12 @@ export const MobileHeaderComponent = () => {
       <Nav style={{ alignItems: "center", backgroundColor: "white" }}>
         <NavLink to="/home">
           <img
-            src={require("../../media/yvonneBlack.png")}
+            src={require("../../media/yvonne.png")}
             style={{ width: "70%" }}
             alt='logo'
           />
         </NavLink>
-        <Bars onClick={() => setIsOpen(!isOpen)} style={{ color: "black" }} />
+        <Bars onClick={() => setIsOpen(!isOpen)} style={{ color: "white" }} />
       </Nav>
       <BarsButton />
     </>
@@ -46,24 +46,27 @@ export const MobileHeaderComponent = () => {
 
   return (
     <>
+      {!isOpen && (<BarsClosed />)}
       {/* CSSTransition hold the whole functionality and I use it for being able to apply transition to all components */}
        <CSSTransition in={isOpen} timeout={300} classNames="transition">
         <div
-          ref={barsRef} // passing the UseRef Hook refference
+          // ref={barsRef} // passing the UseRef Hook refference
           style={
             // if user Mobile Menu (Bars) is open, take only the height that you need to display the menu without scrooling
             isOpen
               ? {
-                  height: barsRef.current.scrollHeight + "px",
+                  height: '100%',
+                  zIndex: '1',
+                  overflow: 'hidden'
                 }
               : {
                   height: "0px",
                 }
           }
-        >
+        className='parent-bars-div'>
           {/* if Mobile Menu is open, then display <BarsOpen/> which is the Mobile Menu, 
           otherwise display <BarsClosed /> which is the page rendered without the Mobile Menu */}
-          {isOpen ? <BarsOpen /> : <BarsClosed />}
+          {isOpen && (<BarsOpen style={{height: '100%', overflow: 'hidden'}} />)}
         </div>
        </CSSTransition>
       

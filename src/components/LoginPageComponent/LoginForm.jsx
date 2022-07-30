@@ -12,6 +12,7 @@ const LoginForm = ({ Login, error }) => {
   };
 
   return (
+    <div className="login-parent">
     <div className="login">
       <h1 className="text-center">may have you a good hello again, artist!</h1>
       <form className="needs-validation" onSubmit={submitHandler}>
@@ -65,6 +66,7 @@ const LoginForm = ({ Login, error }) => {
           value="SIGN IN"
         ></input>
       </form>
+    </div>
     </div>
   );
 };

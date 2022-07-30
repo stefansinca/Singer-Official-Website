@@ -21,7 +21,7 @@ const ContactPageComponent = () => {
         <main className="main-bio">
           <img
             className="main-contact-img"
-            src={require("..//..//media/bio-img.jpg")}
+            src={require("..//..//media/contact-img.jpg")}
             alt="bio-img"
           />
           <h2 className="contact-h2">CONTACT</h2>

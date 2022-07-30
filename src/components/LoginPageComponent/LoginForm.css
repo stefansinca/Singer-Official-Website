@@ -18,7 +18,14 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
+}
 
+.login-parent {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../media/background.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .login {
@@ -31,10 +38,12 @@ body {
 }
 
 
-.login h1 {
+.text-center {
   font-size: 1.8em;
-  margin-bottom: 2rem;
+  margin: .6rem auto;
+  position: relative;
 }
+
 
 .login form {
   font-size: 1.3em;
