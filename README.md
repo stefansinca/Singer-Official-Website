@@ -46,7 +46,7 @@ Based on a similar structure as the BIO Page, the CONTACT Page is made of the ``
 
 * Designed to be fully responsive on all screens, the header is created once and reused on other pages of the app (e.g. BIO page, BLOG page etc.).
 * Based on the screen resolution, buttons from header are displayed or not (e.g. for Mobile, some buttons are not displayed for the pourpouse of the UX).
-* The Header is split into two components: **<BarsOpen /> (for mobile)** and **< BarsClosed />** (for desktop).
+* The Header is split into two components: ```<BarsOpen />``` **(for mobile) and ```< BarsClosed />``` (for desktop).**
 
 ### Mobile Bars
 
