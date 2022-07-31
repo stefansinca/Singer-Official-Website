@@ -1,14 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 
-import HeaderComponent from "../HomePageComponents/HeaderComponent";
+import HeaderComponent from "../HeaderComponent/HeaderComponent";
 import "./BioPageComponent.css";
 
 export const BioPageComponent = () => {
+
   return (
     <>
-      <HeaderComponent />
+      
       <div className="parent-div-bio">
+      <HeaderComponent />
         <div className="bio-div">
           <h1>BIO</h1>
           <img

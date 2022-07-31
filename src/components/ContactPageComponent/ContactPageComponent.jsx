@@ -1,14 +1,15 @@
 
 import React from 'react';
 
-import HeaderComponent from '../HomePageComponents/HeaderComponent';
+import HeaderComponent from '../HeaderComponent/HeaderComponent';
 import './ContactPageComponent.css'
 
 const ContactPageComponent = () => {
   return (
     <>
-      <HeaderComponent />
+      
       <div className="parent-div-bio">
+      <HeaderComponent />
         <div className="bio-div">
           <h1 className='h1-contact'>CONTACT</h1>
           <img
