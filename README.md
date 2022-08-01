@@ -2,11 +2,17 @@
 
 The main focus of the singer Artist Website is to serve as a tool for building a marketing/PR strategy of an artist. This is a presentational website for an artist who are at the beginning of the road and not only.
 
+## Contents
+* [Structure](#structure)
+* [Functionality](#the-login-form)
+* [Skills](#skills)
+* [Time Invested](#time-invested)
+
 ## Structure:
 
 ### HomePage
 
-< to be updated....
+< under development....
 
 ### BIO
 Being a story-telling page, BIO is build as a single static page with the following functionalities:
@@ -17,21 +23,15 @@ Being a story-telling page, BIO is build as a single static page with the follow
 
 ### BLOG
 
-< to be updated....
+< under development....
 
 ### CONTACT
 Based on a similar structure as the BIO Page, the CONTACT Page is made of the ```<BioPageComponent />```. Having a common structre, I was able to use a component as a reusable one.
 
 <img src='https://user-images.githubusercontent.com/66974377/181879527-7934746e-f514-42bc-b672-51a688192640.png' width='50%' /> <img src='https://user-images.githubusercontent.com/66974377/181879841-d5e42a2c-0505-47dc-b949-42cfa8032f11.png' width='49%' />
 
-
-
-
-
 - [x] Responsive Design is fully operable.
 - [x] The structure of the Header, Main and Footer are the same as the BIO Page.
-
-
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ## :nut_and_bolt: Functionality
@@ -44,29 +44,42 @@ Based on a similar structure as the BIO Page, the CONTACT Page is made of the ``
 
 ### Header
 
-* Designed to be fully responsive on all screens, the header is created once and reused on other pages of the app (e.g. BIO page, BLOG page etc.).
+* Designed to be fully responsive on all screens, the header **is created once and reused on other pages** of the app as a component imported.
 * Based on the screen resolution, buttons from header are displayed or not (e.g. for Mobile, some buttons are not displayed for the pourpouse of the UX).
-* The Header is split into two components: ```<BarsOpen />``` **(for mobile) and ```< BarsClosed />``` (for desktop).**
+* The Header is split into two coceptual components: **for devices above 768px** and **for devices bellow 768px.**
 
-### Mobile Bars
+#### Desktop Header
 
-* Build as a single component, the Mobile Bars hold the buttons displayed on the header in desktop mode.
-* Based on **eventHandler**, the user trigger the Bars by pressing on the upper right corner button from the header. The function reverse the value of the **eventHandler** when user trigger again in order to hide the Bars.
-* The Social Icons are moved into the Bars as well. 
-* The Mobile Bars is animated with **react-transition-group.** More specific, the in order to display the the Mobile Bars, the project uses **react-transition-group** library.
+- [x] Fully resposive design
+- [x] Reusable Component (used on other parts of the website as an imported component)
+- [x] Buttons are deplayed **inline-flex.**
 
-https://user-images.githubusercontent.com/66974377/181595189-ceafa4bd-a42d-40ff-b9a4-d60ee21966b5.mp4
+<img src='https://user-images.githubusercontent.com/66974377/182081197-1722765e-3ba1-4877-b461-d17f1072331a.png' width='100%' />
 
+#### Mobile Header
+
+- [x] Build as a singer component, the Header Component are changing when **bellow 768px.**
+- [x] Mobile Header reuses exactly the same elements from the Desktop Header by changing classes with ```useState``` Hook.
+
+1. Using ```useState``` Hook for changing classes of the element:
+```const [paragraph, setParagraph] = useState("paragraph-div");```
+
+2. Declaring a ```function``` that handle the functionality to change classes based on a ```conditional statement```:
 ```
-<CSS Transition > 
-{isOpen ? <BarsOpen /> ? <BarsClosed />} 
-</CSS Transition>
+const navToggle = () => { 
+if (paragraph === "paragraph-div") { 
+setParagraph("paragraph-div paragraph-div-toggle"); 
+} 
+else { 
+setParagraph("paragraph-div"); 
+}}
 ```
 
-You wrap the component where you want to apply the css transition in a ```<CSS Transition >``` container and apply the styles you want to be applied.
-The second line of the code says that, if user has clicked on the button, then display the Bars for Mobile, otherwise display something else which is the actually default page for desktop. **Important:** the button will be displayed only bellow 768px viewport width.
+3. Passing the default state of the Hook as a value of the ```className``` element:
+```<div className={paragraph}> © 2022 Yvonne Music. All Rights Reserved. </div>```
 
-< To be updated ...
+https://user-images.githubusercontent.com/66974377/182084122-0bbf9bb9-b579-4567-8d49-87e26899aa24.mp4
+
 
 ## Skills
 
@@ -76,6 +89,10 @@ The second line of the code says that, if user has clicked on the button, then d
 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
 <a href='' target='_blank' rel='noreferrer'><img src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' width='36' height='36' alt='ReactJS'/></a>
 </p>
+
+## Time Invested
+
+:hourglass: **56 hours** until now
 
 < To be updated ...
 
