@@ -11,6 +11,10 @@ The main focus of the singer Artist Website is to serve as a tool for building a
 ## Structure:
 
 ### HomePage
+The 'HEAD' of the website, HomePage represent the concept of the project with focus on functionality and effieciency for the user.
+
+- [x] The header is reused by importing ```<HeaderComponent />```.
+- [x] Using ReactJS, a **react component** is created outside the ```<HomePageComponent />``` and imported as ```<YouTubeEmbed />```.
 
 < under development....
 
