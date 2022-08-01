@@ -1,0 +1,25 @@
+.video-responsive {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .video-responsive {
+      height: 40vh;
+    }
+
+    .video-responsive iframe {
+      height: 80%;
+      width: 90%;
+    }
+  }

@@ -84,9 +84,9 @@ const HeaderComponent = () => {
         </NavLink>
 
         <div className={socialDiv}>
-          <img src={require("../../media/instagram1.png")} className="icon" />
-          <img src={require("../../media/facebook1.png")} className="icon" />
-          <img src={require("../../media/spotify1.png")} className="icon" />
+          <a href="https://www.instagram.com/_yvooo/?hl=ro"><img src={require("../../media/instagram1.png")} className="icon" /></a>
+          <a href="https://www.facebook.com/yvoonne23"><img src={require("../../media/facebook1.png")} className="icon" /></a>
+          <a href="https://open.spotify.com/artist/7uir3Q8eMSiu8CmBoyNRWm?si=_ySi3PwKSCasDdffOW52uQ"><img src={require("../../media/spotify1.png")} className="icon" /></a>
         </div>
 
         <div className={paragraph}>
@@ -95,13 +95,13 @@ const HeaderComponent = () => {
       </div>
 
       <NavLink to="/home" className="nav-logo">
-        <img src={logo} />
+        <img src={logo} className='img-logo'/>
       </NavLink>
 
       <div className={socialIcon}>
-        <img src={require("../../media/instagram.png")} className="icon" />
-        <img src={require("../../media/facebook.png")} className="icon" />
-        <img src={require("../../media/spotify.png")} className="icon" />
+      <a href="https://www.instagram.com/_yvooo/?hl=ro"><img src={require("../../media/instagram.png")} className="icon" /></a>
+      <a href="https://www.facebook.com/yvoonne23"><img src={require("../../media/facebook.png")} className="icon" /></a>
+      <a href="https://open.spotify.com/artist/7uir3Q8eMSiu8CmBoyNRWm?si=_ySi3PwKSCasDdffOW52uQ"><img src={require("../../media/spotify.png")} className="icon" /></a>
       </div>
 
       <div onClick={navToggle} className={icon}>

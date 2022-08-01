@@ -9,6 +9,7 @@
     top: 0;
     z-index: 1;
     height: 100vh;
+    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -28,13 +29,9 @@
     z-index: 99;
 } */
 
-a {
-    z-index: 2;
-}
-
 .first-bio-img {
     width: 100%;
-    filter: brightness(0.6);
+    filter: brightness(0.4);
     /* z-index 0!important because "Yvonne" is an img and passing z-index 99 to img tag, 
     results in passing z-index 99 on first-bio-img as well which is overwriting the logo */
     z-index: 0!important;
@@ -47,7 +44,6 @@ h1 {
     margin: 0 auto;
     font-size: 3rem;
     z-index: 2;
-    margin-left: 6%;
 
 }
 

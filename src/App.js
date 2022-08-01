@@ -12,6 +12,8 @@ import LoginForm from "./components/LoginPageComponent/LoginForm";
 import { BioPageComponent } from "./components/BioPageComponent/BioPageComponent";
 import ContactPageComponent from './components/ContactPageComponent/ContactPageComponent.jsx';
 import HeaderComponent from './components/HeaderComponent/HeaderComponent';
+import HomePageComponent from './components/HomePageComponent/HomePageComponent.jsx';
+import BlogPageComponent from "./components/BlogPageComponent/BlogComponent";
 
 function App() {
   const adminUser = {
@@ -46,7 +48,7 @@ function App() {
       },
       {
         path: "/",
-        element: <LoginFormApp />,
+        element: <HomePageComponent />,
       },
       {
         path: "/bio",
@@ -54,7 +56,7 @@ function App() {
       },
       {
         path: '/blog',
-        element: <HeaderComponent />
+        element: <BlogPageComponent />
       },
       {
         path: "/contact",
@@ -62,7 +64,7 @@ function App() {
       },
       {
         path: '/home',
-        element: <HeaderComponent />
+        element: <HomePageComponent />
       }
     ]);
 
