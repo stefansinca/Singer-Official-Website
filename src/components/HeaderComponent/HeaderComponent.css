@@ -111,6 +111,10 @@
         margin-right: 0;
     }
 
+    .img-logo {
+        width: 75%;
+    }
+
     .nav-active .nav-link {
         font-size: 2rem;
         margin: 1rem 0;

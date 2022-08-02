@@ -17,7 +17,7 @@ export const slides = [
 
 export const containerStyles = {
     width: '100vw',
-    height: '30vh',
+    height: '25vh',
     margin: '0 auto'
 }
 
