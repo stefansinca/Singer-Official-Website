@@ -3,12 +3,19 @@ import {NavLink} from 'react-router-dom';
 
 import HeaderComponent from './/../HeaderComponent/HeaderComponent'
 import YoutubeEmbed from '../YoutubeComponent/YoutubeEmbed';
+import CarouselComponent from '../CarouselComponent/CarouselComponent';
+import {
+  slides,
+  containerStyles
+} from '../CarouselComponent/slides';
+
 import './HomePageComponent.css';
 
 const HomePageComponent = () => {
   return (
     <div className='parent-div-home'>
       <HeaderComponent />
+
       <header className='header'>
       <img src={require("..//..//media/first-bio-img.jpg")} alt="artist-photo"  className='header-img'/>
       <div className='second-header'>
@@ -24,6 +31,10 @@ const HomePageComponent = () => {
       <section className='video-section'>
         <YoutubeEmbed embedId='4XyZC3RGb3M'/>
       </section>
+
+      <main style={containerStyles}>
+          <CarouselComponent slides={slides} />
+      </main>
 
     </div>
     
