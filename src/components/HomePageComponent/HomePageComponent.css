@@ -9,12 +9,12 @@
 
 .header {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: -11vh;
+    top: -15vh;
     position: relative;
 }
 
@@ -25,7 +25,7 @@
     margin-right: auto;
     filter: brightness(0.4);
     z-index: 0!important;
-    height: 102vh;
+    height: 105vh;
     object-fit: cover; 
 }
 
@@ -71,7 +71,7 @@
     width: 13vw;
     height: 3.5rem;
     background-color: #ffffff00;
-    color: #db1661;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
     border: solid 2px;
@@ -109,13 +109,18 @@
 /* Mobile */
 
 @media screen and (max-width: 670px) {
+
+    .parent-div-home::-webkit-scrollbar {
+        display: none;
+    }
+
     .album-name-img {
         width: 60%;
         height: 60%;
     }
 
     .h2-header {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .header-p {
@@ -128,6 +133,6 @@
     .header-btn {
         font-size: .5rem;
         height: 5vh;
-        width: 30vw;
+        min-width: 30vw;
     }
 }

@@ -22,7 +22,7 @@
     align-items: center;
     height: auto;
     position: relative;
-    top: -11vh;
+    top: -15vh;
 }
 
 /* img {
@@ -43,7 +43,7 @@ h1 {
     position: absolute;
     margin: 0 auto;
     font-size: 3rem;
-    z-index: 2;
+    z-index: 1;
 
 }
 
@@ -130,6 +130,10 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+    .parent-div-bio::-webkit-scrollbar {
+        display: none;
+    }
+
     .main-bio {
         display: flex;
         flex-direction: column;
@@ -147,7 +151,6 @@ h1 {
         width: 90%;
         display: block;
         margin: 0 auto;
-        margin-top: 5rem;
         height: auto;
     }
 
