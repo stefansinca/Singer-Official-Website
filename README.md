@@ -15,6 +15,7 @@ The 'HEAD' of the website, HomePage represent the concept of the project with fo
 
 - [x] The header is reused by importing ```<HeaderComponent />```.
 - [x] Using ReactJS, a **react component** is created outside the ```<HomePageComponent />``` and imported as ```<YouTubeEmbed />```.
+- [x] For the pourpose of adding more functionality to the project, after the video section, a **carousel-component** is defined. Using **useState Hook** we change the image from the carousel based on **index from the array.** 
 
 < under development....
 
@@ -40,7 +41,35 @@ Based on a similar structure as the BIO Page, the CONTACT Page is made of the ``
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ## :nut_and_bolt: Functionality
 
-### The Login Form
+### Carousel
+```<CarouselComponent />``` is defined to display images on the **HomePage.** It is build as a **reusable component** by having a data-base object with images as a value for an attribute ```<CarouselComponent database={database}```.
+
+1. Using **useState Hook** for changing the the images from the carousel:
+```const [currentSlide, setCurrentSlide] = useState(0);```
+
+2. Defining a function that will change the image:
+```
+const nextSlide = () => {
+setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1); }
+```
+
+3. Using **useEffect Hook** for building a loop based on **currentSlide state:**
+```
+useEffect(() => {
+  if(autoScroll) {
+     autoSlider();
+  }
+
+  //Cleanup function 
+    return () => clearInterval(slideInterval)
+}, [currentSlide])
+```
+
+https://user-images.githubusercontent.com/66974377/182334911-a8cf96c3-71d0-4cd7-975e-e9c3b7726553.mp4
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Login Form
 
 * It uses local static credentials (the time invested in the project did not allowed to build a server with dynamic credentials stored on a server).
 * Have validation functionality.
@@ -96,7 +125,7 @@ https://user-images.githubusercontent.com/66974377/182084122-0bbf9bb9-b579-4567-
 
 ## Time Invested
 
-:hourglass: **56 hours** until now
+:hourglass: **72 hours** until now
 
 < To be updated ...
 
