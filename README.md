@@ -125,7 +125,7 @@ https://user-images.githubusercontent.com/66974377/182084122-0bbf9bb9-b579-4567-
 
 ## Time Invested
 
-:hourglass: **72 hours** until now
+:hourglass: **75 hours** until now
 
 < To be updated ...
 
