@@ -1,138 +1,238 @@
 .parent-div-home {
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Header Section */
 
 .header {
-    width: 100%;
-    height: 105vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: -15vh;
-    position: relative;
+  width: 100%;
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: -15vh;
+  position: relative;
 }
 
 .header-img {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    filter: brightness(0.4);
-    z-index: 0!important;
-    height: 105vh;
-    object-fit: cover; 
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(0.4);
+  z-index: 0 !important;
+  height: 105vh;
+  object-fit: cover;
 }
 
 .second-header {
-    width: 100%;
-    height: 50vh;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .album-name-img {
-    margin: 0;
-    margin-top: 6rem;
+  margin: 0;
+  margin-top: 6rem;
 }
 
 .h2-header {
-    font-size: 1.7rem;
-    margin: 0 auto;
-    font-weight: 600;
-    margin: 0 auto;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  font-weight: 600;
+  margin: 0 auto;
 }
 
 .header-p {
-    font-size: 1rem;
-    text-align: center;
+  font-size: 1rem;
+  text-align: center;
 }
 .header-nav-button {
-    text-decoration: none;
-    width: 100%;
-    display: flex;;
-    justify-content: center;
-    align-items: center;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-btn {
-    display: block;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: 13vw;
-    height: 3.5rem;
-    background-color: #ffffff00;
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-    border: solid 2px;
-    border-color: #db1661;
-    max-width: 20vw;
-
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 13vw;
+  height: 3.5rem;
+  background-color: #ffffff00;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid 2px;
+  border-color: #db1661;
+  max-width: 20vw;
 }
 
 .header-btn:hover {
-    color: white;
-    background-color: #7c123a;
-    border: #7c123a;
-    transition: .2s ease-in-out;
+  color: white;
+  background-color: #7c123a;
+  border: #7c123a;
+  transition: 0.2s ease-in-out;
 }
-
 
 /* Video Section */
 .video-section {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-bottom: 8rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 8rem;
 }
 
 /* Carousel Component */
 .homepage-main {
-    width: 100%;
-    height: 80vh;
+  width: 100%;
+  height: 80vh;
 }
 
+.container-styles {
+  width: 100vw;
+  height: 65vh;
+  margin: 0 auto;
+}
 
+/* Album Section */
 
+.album-section {
+  width: 100%;
+  height: 100vh;
+}
 
+.home-album-img {
+  width: 50%;
+  display: block;
+  margin: 8rem 2rem;
+  height: auto;
+  float: right;
+}
+
+.home-album-h2 {
+  color: black;
+  width: 30%;
+  display: inline-flex;
+  font-weight: 600;
+  margin-top: 20%;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  margin-left: 5%;
+}
+
+.home-album-button {
+  display: block;
+  margin-left: 5%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 30%;
+  height: 2.5rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: solid 2px;
+  border-color: #db1661;
+  max-width: 10rem;
+}
+
+.home-album-button:hover {
+  background-color: #db1661;
+  transition: 0.2s ease-in-out;
+  color: white;
+}
+
+.listen-btn-home-nav {
+  text-decoration: none;
+}
 
 /* Mobile */
 
 @media screen and (max-width: 670px) {
+  .parent-div-home::-webkit-scrollbar {
+    display: none;
+  }
 
-    .parent-div-home::-webkit-scrollbar {
-        display: none;
-    }
+  .album-name-img {
+    width: 60%;
+    height: 60%;
+  }
 
-    .album-name-img {
-        width: 60%;
-        height: 60%;
-    }
+  .h2-header {
+    font-size: 1rem;
+  }
 
-    .h2-header {
-        font-size: 1rem;
-    }
+  .header-p {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
 
-    .header-p {
-        font-size: .8rem;
-        margin: 0;
-        margin-left: .2rem;
-        margin-right: .2rem;
-    }
+  .header-btn {
+    font-size: 0.5rem;
+    height: 5vh;
+    min-width: 30vw;
+  }
 
-    .header-btn {
-        font-size: .5rem;
-        height: 5vh;
-        min-width: 30vw;
-    }
+  .video-section {
+    margin-bottom: 6rem;
+  }
+
+  .album-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .home-album-img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 6rem;
+    height: auto;
+  }
+
+  .home-album-h2 {
+    width: 80%;
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+  }
+
+  .album-paragraph {
+    color: black;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    font-size: .8rem;
+  }
+
+  .home-album-button {
+    display: block;
+    margin-left: 5%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 35%;
+    height: 2.5rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: solid 2px;
+    border-color: #db1661;
+    max-width: 15rem;
+    font-size: .8rem;
+  }
+
+  .container-styles {
+    height: 25vh;
+  }
 }
