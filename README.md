@@ -17,6 +17,7 @@ The 'HEAD' of the website, HomePage represent the concept of the project with fo
 - [x] Using ReactJS, a **react component** is created outside the ```<HomePageComponent />``` and imported as ```<YouTubeEmbed />```.
 - [x] For the pourpose of adding more functionality to the project, after the video section, a **carousel-component** is defined. Using **useState Hook** we change the image from the carousel based on **index from the array.** 
 - [x] The Carousel Component is followed by a section with some informations about the most recent product of the artist (album), a picture next to the paragraph and a button that redirect the user to the album of the artist from Spotify.
+- [x] **Story Section** is a place where the artist tell the story of the album, what meens for the him/her, what's about and so on. Hold a button for redirecting to the album on Spotify as well. 
 
 < under development....
 
@@ -126,7 +127,7 @@ https://user-images.githubusercontent.com/66974377/182084122-0bbf9bb9-b579-4567-
 
 ## Time Invested
 
-:hourglass: **75 hours** until now
+:hourglass: **81 hours** until now
 
 < To be updated ...
 
