@@ -57,8 +57,8 @@ const HomePageComponent = () => {
         <p className="album-paragraph">
           Yvonne's new album "A Million Colors" is available now everywhere.
           This beautiful record was released in December 13, 2021 and is the
-          first EP released saying the story of authentic feelings and desire of
-          finding true love.
+          first EP released saying the story of authentic feelings and
+          rediscover what we are.
         </p>
         <a
           href="https://open.spotify.com/album/1ua8rwCe6RdDiFoyROmnIc?si=tFhSLfJmSJiZgaVaHF4uPw"
@@ -88,28 +88,72 @@ const HomePageComponent = () => {
         <h2 className="contact-h2 story-h2">A MILLION COLORS IS A STORY</h2>
         <p className="contact-paragraph story-paragraph">
           "A million colors" was and is a first possibility to express emotion,
-          sensitivity, knowledge and achievement. 
+          sensitivity, knowledge and achievement.
           <br />
           <br />
-          What we feel, even if it is
-          hate or happiness, sadness or disappointment, helps us find and know
-          ourselves better. The road is long and unpredictable, we can lose
-          loved ones, we can lose everything and then rediscover what we were
-          never really looking for. 
+          What we feel, even if it is hate or happiness, sadness or
+          disappointment, helps us find and know ourselves better. The road is
+          long and unpredictable, we can lose loved ones, we can lose everything
+          and then rediscover what we were never really looking for.
           <br />
           <br />
-          Patience is the key, patience towards the
-          unknown, which is often scary but worth waiting for.
+          Patience is the key, patience towards the unknown, which is often
+          scary but worth waiting for.
           <br />
-          <br />
-          I broke a part of
-          myself to turn it into art and present it as it is, as I am and so how
-          will I remain divided into millions of colors known to you all now.
+          <br />I broke a part of myself to turn it into art and present it as
+          it is, as I am and so how will I remain divided into millions of
+          colors known to you all now.
         </p>
-        <a className="story-btn-homepage-nav" href="https://open.spotify.com/album/1ua8rwCe6RdDiFoyROmnIc?si=tFhSLfJmSJiZgaVaHF4uPw">
-        <button className="story-btn">LISTEN NOW</button>
+        <a
+          className="story-btn-homepage-nav"
+          href="https://open.spotify.com/album/1ua8rwCe6RdDiFoyROmnIc?si=tFhSLfJmSJiZgaVaHF4uPw"
+        >
+          <button className="story-btn">LISTEN NOW</button>
         </a>
       </section>
+
+      <section className="subscribe-section">
+        <div className="subscribe-img">
+          <div className="subscribe-content">
+            <h3 className="subscribe-h3">GET DELIVERED</h3>
+            <p className="subscribe-paragraph">
+              Sign up below for occasional emails with an encouraging word + new
+              music releases.
+            </p>
+            <form className="subscribe-form" action="">
+              <input className="subscribe-input" type="text" name="" id="" placeholder="Email Address"/>
+              <button className="subscribe-btn">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bio-footer">
+        <a
+          href="https://www.instagram.com/_yvooo/?hl=ro"
+          className="a-bio-icon"
+        >
+          <img
+            className="bio-icon"
+            src={require("../../media/instagram1.png")}
+          />{" "}
+        </a>
+        <a href="https://www.facebook.com/yvoonne23" className="a-bio-icon">
+          <img
+            className="bio-icon"
+            src={require("../../media/facebook1.png")}
+          />{" "}
+        </a>
+        <a
+          href="https://open.spotify.com/artist/7uir3Q8eMSiu8CmBoyNRWm?si=_ySi3PwKSCasDdffOW52uQ"
+          className="a-bio-icon"
+        >
+          <img className="bio-icon" src={require("../../media/spotify1.png")} />{" "}
+        </a>
+      </footer>
+      <p className="footer-paragraph">
+        © 2022 Yvonne Music. All Rights Reserved.
+      </p>
     </div>
   );
 };
