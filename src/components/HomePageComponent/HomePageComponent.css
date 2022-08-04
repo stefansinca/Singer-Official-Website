@@ -92,6 +92,7 @@
   align-items: center;
   display: flex;
   margin-bottom: 8rem;
+  height: 100vh;
 }
 
 /* Carousel Component */
@@ -102,7 +103,7 @@
 
 .container-styles {
   width: 100vw;
-  height: 65vh;
+  height: 60vh;
   margin: 0 auto;
 }
 
@@ -116,7 +117,8 @@
 .home-album-img {
   width: 50%;
   display: block;
-  margin: 8rem 2rem;
+  margin: 2rem 2rem;
+  margin-top: 7rem;
   height: auto;
   float: right;
 }
@@ -132,12 +134,16 @@
   margin-left: 5%;
 }
 
+.album-paragraph {
+  color: black;
+  margin-left: 5%;
+}
+
 .home-album-button {
   display: block;
-  margin-left: 5%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  width: 30%;
+  width: 100%;
   height: 2.5rem;
   background-color: #ffffff;
   cursor: pointer;
@@ -156,9 +162,126 @@
   text-decoration: none;
 }
 
+/* Playlist Section */
+
+.playlist-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.playlist-img-div {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../media/first-bio-img.jpg  ");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.4);
+  position: absolute;
+}
+
+.playlist-h1 {
+  font-size: 1.5rem;
+  margin-left: 5%;
+  position: relative;
+}
+
+.playlist-content-div {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.playlist-paragraph {
+  color: white;
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
+
+.playlist-button {
+  width: 15%;
+  height: 6vh;
+  margin-left: 5%;
+  background: none;
+  border: solid 2px;
+  border-color: #db1661;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.playlist-button:hover {
+  border-color: #7c123a;
+  background-color: #7c123a;
+  transition: 0.2s ease-in-out;
+}
+
+/* Story Section */
+.story-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #dfe0e1;
+}
+
+.story-img {
+  height: 95vh;
+  margin-top: 1.5rem;
+  width: 40%;
+  margin-right: 5%;
+  margin-right: 5rem;
+}
+
+.story-h2 {
+  color: black;
+  width: 40%;
+  display: inline-flex;
+  font-weight: 600;
+  margin-top: 8%;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.story-paragraph {
+  color: black;
+  display: block;
+  width: 30%;
+  float: left;
+  margin-bottom: 2rem;
+  margin-right: 9rem;
+}
+
+.story-btn-homepage-nav {
+  width: 13%;
+  height: 6vh;
+}
+
+.story-btn {
+  width: 13%;
+  height: 6vh;
+  background: none;
+  border: solid 2px;
+  border-color: #000000;
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+}
+
+.story-btn:hover {
+  background-color: #000000;
+  color: white;
+  border-color: #000000;
+  transition: 0.2s ease-in-out;
+}
+
 /* Mobile */
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 760px) {
   .parent-div-home::-webkit-scrollbar {
     display: none;
   }
@@ -187,12 +310,15 @@
 
   .video-section {
     margin-bottom: 6rem;
+    height: 50vh;
   }
 
+  /* Album Section */
   .album-section {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    justify-content: center;
   }
 
   .home-album-img {
@@ -211,28 +337,98 @@
 
   .album-paragraph {
     color: black;
-    width: 90%;
+    width: 80%;
     display: block;
-    margin: 0 auto;
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+
+  .album-btn {
+    margin-top: 1rem;
   }
 
   .home-album-button {
     display: block;
-    margin-left: 5%;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: 35%;
-    height: 2.5rem;
+    margin: 0;
+    width: 100%;
+    height: 2.2rem;
     background-color: #ffffff;
     cursor: pointer;
     border: solid 2px;
     border-color: #db1661;
     max-width: 15rem;
-    font-size: .8rem;
+    font-size: 0.7rem;
   }
 
   .container-styles {
     height: 25vh;
+  }
+
+  /* Playlist Section */
+
+  .playlist-paragraph {
+    color: white;
+    margin-left: 5%;
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .playlist-button {
+    width: 50%;
+    height: 6vh;
+    margin-left: 5%;
+    background: none;
+    border: solid 2px;
+    border-color: #db1661;
+    font-size: 0.7rem;
+    color: white;
+  }
+
+  .playlist-button:hover {
+    border-color: #7c123a;
+    background-color: #7c123a;
+    transition: 0.2s ease-in-out;
+  }
+
+  /* Story Section */
+
+  .story-section {
+    width: 100%;
+    height: auto;
+    background-color: #dfe0e1;
+  }
+
+  .story-h2 {
+    font-size: 1rem;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .story-img {
+    height: auto;
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .story-paragraph {
+    width: 80%;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    margin-left: 5%;
+  }
+
+  .story-btn-homepage-nav {
+    width: 30%;
+    height: 5vh;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+  }
+
+  .story-btn {
+    margin-left: 0;
+    width: 100%;
+    font-size: 0.6rem;
+    height: 5vh;
+    margin-bottom: 2rem;
   }
 }
