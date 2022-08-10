@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { NavLink } from "react-router-dom";
 
 import HeaderComponent from ".//../HeaderComponent/HeaderComponent";
@@ -9,6 +10,29 @@ import { slides, containerStyles } from "../CarouselComponent/slides";
 import "./HomePageComponent.css";
 
 const HomePageComponent = () => {
+  const [details, setDetails] = useState({ email: "" });
+
+  // sending email subscriber with EmailJS
+  const submitHandler = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_USER_KEY
+      )
+      .then(
+        (result) => {
+          alert("Message Sent, We will get back to you shortly", result.text);
+          setDetails({ email: "" });
+        },
+        (error) => {
+          alert("An error occurred, Please try again", error.text);
+        }
+      );
+  };
+
   return (
     <div className="parent-div-home">
       <HeaderComponent />
@@ -120,9 +144,21 @@ const HomePageComponent = () => {
               Sign up below for occasional emails with an encouraging word + new
               music releases.
             </p>
-            <form className="subscribe-form" action="">
-              <input className="subscribe-input" type="text" name="" id="" placeholder="Email Address"/>
-              <button className="subscribe-btn">Sign Up</button>
+            <form className="subscribe-form" onSubmit={submitHandler}>
+              <input
+                className="subscribe-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                onChange={(e) =>
+                  setDetails({ ...details, email: e.target.value })
+                }
+                value={details.email}
+              />
+              <button className="subscribe-btn" type="submit">
+                Sign Up
+              </button>
             </form>
           </div>
         </div>
