@@ -121,7 +121,7 @@ Created with EmailJS library for providing functionality without a server-side, 
 - [x] Have a regex email validation
 - [x] Take the input from the user with a callback function ```(e) => e.target.value``` and store the information in as a value of the ```email``` key from the ```useState hook```: ```onChange={(e) => setDetails({email: e.target.value})}```
 - [x] Uses a promise function to display an alert message if the form works as intended/or an error one.
-- [x] Call the function that hold the functionality on the ```form``` tag as: ```<form onClick={submitHandler}></form>```
+- [x] Call the function that hold the functionality on the ```form``` tag as: ```<form onSubmit={submitHandler}></form>```
 
 ## Skills
 
