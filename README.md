@@ -134,7 +134,7 @@ Created with EmailJS library for providing functionality without a server-side, 
 
 ## Time Invested
 
-:hourglass: **91 hours** until now
+:hourglass: **93 hours** until now
 
 < To be updated ...
 
