@@ -8,6 +8,15 @@ The main focus of the singer Artist Website is to serve as a tool for building a
 * [Skills](#skills)
 * [Time Invested](#time-invested)
 
+## Run build
+Download the repository.   
+
+:computer: Open the terminal and go to the react app directory.   
+:keyboard: Run: ```npm install react-scripts --save``` (if error add ```--force``` at the end of the line)   
+:rocket: Type: ```npm start```
+
+Enjoy!
+
 ## Structure:
 
 ### HomePage
