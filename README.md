@@ -3,6 +3,7 @@
 The main focus of the singer Artist Website is to serve as a tool for building a marketing/PR strategy of an artist. This is a presentational website for an artist who are at the beginning of the road and not only.
 
 ## Contents
+* [Run_build](#run-build)
 * [Structure](#structure)
 * [Functionality](#carousel)
 * [Skills](#skills)
@@ -25,10 +26,10 @@ The 'HEAD' of the website, HomePage represent the concept of the project with fo
 - [x] The header is reused by importing ```<HeaderComponent />```.
 - [x] Using ReactJS, a **react component** is created outside the ```<HomePageComponent />``` and imported as ```<YouTubeEmbed />```.
 - [x] For the pourpose of adding more functionality to the project, after the video section, a **carousel-component** is defined. Using **useState Hook** we change the image from the carousel based on **index from the array.** 
-- [x] The Carousel Component is followed by a section with some informations about the most recent product of the artist (album), a picture next to the paragraph and a button that redirect the user to the album of the artist from Spotify.
-- [x] Audio Player Section with some tracks will pe added here in the future. - Under Development
+- [x] **The Carousel Component** is followed by a section with some informations about the most recent product of the artist (album), a picture next to the paragraph and a button that redirect the user to the album of the artist from Spotify.
+- [x] **Album Player Section** is build with ```<iframe>``` tag element generated from Spotify Premium app. No further implementation was necessary.
 - [x] **Story Section** is a place where the artist tell the story of the album, what meens for the him/her, what's about and so on. Hold a button for redirecting to the album on Spotify as well. 
-- [x] Email Subscriber Section, right under the Story Section collects subscribers email and storing in a data base from where the admin of the app will send emails with new releases/infos about future events etc. The functionality of this component will be detailed in the #Functionality section.
+- [x] **Email Subscriber Section**, right under the Story Section collects subscribers email and storing in a data base from where the admin of the app will send emails with new releases/infos about future events etc. The functionality of this component will be detailed in the #Functionality section.
 
 ### BIO
 Being a story-telling page, BIO is build as a single static page with the following functionalities:
@@ -37,7 +38,7 @@ Being a story-telling page, BIO is build as a single static page with the follow
 - [x] The **Contact** button is wraped into a ```</NavLink>``` tag in order to redirect to a new page with ***React Routing***
 - [x] The footer section of the page hold a social media icon-links for a smooth redirect to the artist social media pages. 
 
-### BLOG
+### EVENTS
 
 < under development....
 
@@ -124,6 +125,25 @@ setParagraph("paragraph-div");
 
 https://user-images.githubusercontent.com/66974377/182084122-0bbf9bb9-b579-4567-8d49-87e26899aa24.mp4
 
+### Album Playlist
+Wraped inside ```<iframe>``` tag element generated from Spotify Premium app. Works as a APIs, but the songs are cut to 30s.
+**Important:** was not tested with Spotify free app.
+
+**Implementation:**
+
+1. Embed the playlist from Spotify App:
+
+ 
+<img src='https://user-images.githubusercontent.com/66974377/184853325-17e5913f-0062-4753-a33e-6caa92e1bb85.png' width='50%' />
+
+2. Copy the code and paste into your app. Use CSS if you want to add additional styles and run the app:
+
+
+<img src='https://user-images.githubusercontent.com/66974377/184854018-515e079f-7f55-45f7-96ce-031809855e7c.png' width='50%' />
+
+<img src='https://user-images.githubusercontent.com/66974377/184854097-bca491f1-f79d-48c8-b540-e77a6a005259.png' width='50%' />
+
+
 ### Email Subscription
 Created with EmailJS library for providing functionality without a server-side, from the front-end only.
 
@@ -143,7 +163,7 @@ Created with EmailJS library for providing functionality without a server-side, 
 
 ## Time Invested
 
-:hourglass: **93 hours** until now
+:hourglass: **95 hours** until now
 
 < To be updated ...
 
