@@ -14,6 +14,7 @@ import ContactPageComponent from './components/ContactPageComponent/ContactPageC
 import HeaderComponent from './components/HeaderComponent/HeaderComponent';
 import HomePageComponent from './components/HomePageComponent/HomePageComponent.jsx';
 import BlogPageComponent from "./components/BlogPageComponent/BlogComponent";
+import AudioPlayer from "./components/AudioPlayerComponent/AudioPlayer";
 
 function App() {
   const adminUser = {
@@ -56,7 +57,7 @@ function App() {
       },
       {
         path: '/blog',
-        element: <BlogPageComponent />
+        element: <AudioPlayer />
       },
       {
         path: "/contact",
@@ -76,6 +77,7 @@ function App() {
       details.password == adminUser.password
     ) {
       console.log("Welcome!");
+      window.localStorage.setItem('Login', 'true');
       setUser({
         email: details.email,
         password: details.password,

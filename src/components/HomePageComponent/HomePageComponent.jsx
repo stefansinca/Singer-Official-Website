@@ -25,10 +25,10 @@ const HomePageComponent = () => {
       .then(
         (result) => {
           alert("Message Sent, We will get back to you shortly", result.text);
-          setDetails({ email: "" });
+          setDetails({ email: "" }); // clear the email input field
         },
         (error) => {
-          alert("An error occurred, Please try again", error.text);
+          alert("An error occured, Please try again", error.text);
         }
       );
   };
@@ -95,11 +95,23 @@ const HomePageComponent = () => {
       <section className="playlist-section">
         <div className="playlist-img-div"></div>
         <div className="playlist-content-div">
-          <h1 className="playlist-h1">LISTEN APIs</h1>
+          <iframe
+            style={{ borderRadius: "12px" }}
+            src="https://open.spotify.com/embed/playlist/1JEQ8obE64pXmHpxNjo34X?utm_source=generator"
+            width="50%"
+            height="280"
+            frameBorder="0"
+            allowFullScreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          ></iframe>
+          <h1 className="playlist-h1">LISTEN</h1>
           <p className="playlist-paragraph">
-            A Million Colors is now available anywhere.
+            A Million Colors is now available anywhere. You can add to your
+            playlist.
           </p>
-          <button className="playlist-button">DOWNLOAD ALBUM</button>
+          <a href="https://open.spotify.com/album/1ua8rwCe6RdDiFoyROmnIc?si=BvpSUS7XRTiPSJYlcD8wZA" className="playlist-btn">
+            <button className="playlist-button">ADD TO PLAYLIST</button>
+          </a>
         </div>
       </section>
 
