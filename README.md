@@ -115,6 +115,13 @@ setParagraph("paragraph-div");
 
 https://user-images.githubusercontent.com/66974377/182084122-0bbf9bb9-b579-4567-8d49-87e26899aa24.mp4
 
+### Email Subscription
+Created with EmailJS library for providing functionality without a server-side, from the front-end only.
+
+- [x] Have a regex email validation
+- [x] Take the input from the user with a callback function ```(e) => e.target.value``` and store the information in as a value of the ```email``` key from the ```useState hook```: ```onChange={(e) => setDetails({email: e.target.value})}```
+- [x] Uses a promise function to display an alert message if the form works as intended/or an error one.
+- [x] Call the function that hold the functionality on the ```form``` tag as: ```<form onSubmit={submitHandler}></form>```
 
 ## Skills
 
@@ -127,7 +134,7 @@ https://user-images.githubusercontent.com/66974377/182084122-0bbf9bb9-b579-4567-
 
 ## Time Invested
 
-:hourglass: **84 hours** until now
+:hourglass: **91 hours** until now
 
 < To be updated ...
 
