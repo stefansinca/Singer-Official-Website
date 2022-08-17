@@ -9,6 +9,10 @@ The main focus of the singer Artist Website is to serve as a tool for building a
 * [Skills](#skills)
 * [Time Invested](#time-invested)
 
+## Live
+The app is deployed on Netlify for a better understanding of how this will serve as a product and for testing pourpouses as well.   
+**LIVE:** https://yvonnemusic.netlify.app/ 
+
 ## Run build
 Download the repository.   
 
