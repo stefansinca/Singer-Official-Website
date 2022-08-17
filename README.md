@@ -21,7 +21,7 @@ Download the repository.
 :keyboard: Run: ```npm install react-scripts --save``` (if error add ```--force``` at the end of the line)   
 :rocket: Type: ```npm start```
 
-**Enjoy!**
+<h3>Enjoy! :slightly_smiling_face:	</h3>
 
 ## Structure:
 
