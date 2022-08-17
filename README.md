@@ -3,7 +3,8 @@
 The main focus of the singer Artist Website is to serve as a tool for building a marketing/PR strategy of an artist. This is a presentational website for an artist who are at the beginning of the road and not only.
 
 ## Contents
-* [Run_build](#run-build)
+* [Live](#live)
+* [Run build](#run-build)
 * [Structure](#structure)
 * [Functionality](#carousel)
 * [Skills](#skills)
